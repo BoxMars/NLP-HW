@@ -6,7 +6,7 @@ sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' openjdk:8-jdk 
 
 printf "Tokenizing English...\n"
 
-sudo docker run --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
+sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
     /bin/bash \
     /mnt/scripts/token-en.sh
 
