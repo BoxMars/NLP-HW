@@ -6,12 +6,9 @@ sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' openjdk:8-jdk 
 
 printf "Tokenizing English...\n"
 
-sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
-    /home/moses/mosesdecoder/scripts/tokenizer/tokenizer.perl \
-        -l en \
-        -threads 4 \
-        < /mnt/iwslt2014zh-en/train/train.tags.zh-en.en \
-        > /mnt/iwslt2014zh-en/train/train.token.en
+sudo docker run --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
+    /bin/bash \
+    /mnt/scripts/token-en.sh
 
 
 printf "Cleaning corpus...\n"
