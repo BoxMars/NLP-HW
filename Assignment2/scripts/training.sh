@@ -4,7 +4,7 @@ printf "Training started\n"
     -corpus /mnt/iwslt2014zh-en/train/train.token.clean.50 \
     -f zh \
     -e en \
-    -alignment grow-diag-final-and \
+    -alignment grow-diag-final \
     -reordering msd-bidirectional-fe \
     -lm 0:3:/mnt/iwslt2014zh-en/train/train.token.clean.50.blm.en:8 \
     --mgiza \

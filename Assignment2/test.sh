@@ -1,2 +1,2 @@
-sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses \
+sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
     /bin/bash /mnt/scripts/test.sh

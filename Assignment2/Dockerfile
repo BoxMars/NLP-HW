@@ -24,7 +24,8 @@ WORKDIR /home/moses
 
 # Build boost
 #
-RUN wget http://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.gz
+# RUN wget http://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.gz
+COPY ./boost_1_55_0.tar.gz /home/moses/
 RUN tar zxvf boost_1_55_0.tar.gz
 WORKDIR /home/moses/boost_1_55_0
 RUN ./bootstrap.sh
