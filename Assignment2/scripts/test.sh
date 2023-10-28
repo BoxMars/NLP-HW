@@ -1,0 +1,1 @@
+echo "印度 的 第四 大 城市 在 昨天 陷入 瘫痪" | /home/moses/mosesdecoder/bin/moses -f /mnt/model/model/moses.ini

@@ -1,32 +1,35 @@
 printf "Building English Language Models and Counts...\n"
-docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' coedl/kaldi-srilm:latest \
-        /kaldi/tools/srilm/bin/i686-m64/ngram-count \
+sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses \
+        /home/moses/mosesdecoder/bin/lmplz \``
+        -o 3 \
+        -S 50% \
+        -T /mnt/tmp \
         -text /mnt/iwslt2014zh-en/train/train.token.clean.50.en \
-        -order 3 \
-        -write /mnt/iwslt2014zh-en/train/train.token.clean.50.en.count \
-        -lm /mnt/iwslt2014zh-en/train/train.token.clean.50.en.lm \
-        -interpolate -unk -map-unk "<UNK>" 
+        -arpa /mnt/iwslt2014zh-en/train/train.token.clean.50.lm.en \
+        -discount_fallback
+
 
 printf "Building Chinese Language Models and Counts...\n"
-docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' coedl/kaldi-srilm:latest \
-        /kaldi/tools/srilm/bin/i686-m64/ngram-count \
+sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses \
+        /home/moses/mosesdecoder/bin/lmplz \
+        -o 3 \
+        -S 50% \
+        -T /mnt/tmp \
         -text /mnt/iwslt2014zh-en/train/train.token.clean.50.zh \
-        -order 3 \
-        -write /mnt/iwslt2014zh-en/train/train.token.clean.50.zh.count \
-        -lm /mnt/iwslt2014zh-en/train/train.token.clean.50.zh.lm \
-        -interpolate -unk -map-unk "<UNK>" 
+        -arpa /mnt/iwslt2014zh-en/train/train.token.clean.50.lm.zh \
+        -discount_fallback
 
 printf "Building binary English language models...\n"
-sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
+sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses \
         /home/moses/mosesdecoder/bin/build_binary \
-        /mnt/iwslt2014zh-en/train/train.token.clean.50.en.lm \
-        /mnt/iwslt2014zh-en/train/train.token.clean.50.en.blm 
+        /mnt/iwslt2014zh-en/train/train.token.clean.50.lm.en \
+        /mnt/iwslt2014zh-en/train/train.token.clean.50.blm.en
 
 printf "Building binary Chinese language models...\n"
-sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses \
+sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses \
         /home/moses/mosesdecoder/bin/build_binary \
-        /mnt/iwslt2014zh-en/train/train.token.clean.50.zh.lm \
-        /mnt/iwslt2014zh-en/train/train.token.clean.50.zh.blm 
+        /mnt/iwslt2014zh-en/train/train.token.clean.50.lm.zh \
+        /mnt/iwslt2014zh-en/train/train.token.clean.50.blm.zh 
 
-sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' moses /bin/bash /mnt/scripts/query.sh
+sudo docker run -it --rm -v '/Users/box/Study/Master/NLP/Assignment2:/mnt' moses /bin/bash /mnt/scripts/query.sh
 
