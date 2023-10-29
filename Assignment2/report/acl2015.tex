@@ -100,10 +100,12 @@ zh \
 \end{lstlisting}
 By the code in \textit{Listing 3}, we limit the length of the parallel corpus text to no more than fifty words, and convert the English to all lowercase.
 
+Such pre-processing is also done for the test and dev data.
+
 \section{3-gram Language Model}
 \textit{LMPLZ} is used to train the language model, which is estimates language models with Modified Kneser-Ney smoothing and no pruning. The command is shown in \textit{Listing 4}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Build Language Model}]
 $MOSE_BIN/lmplz \
 -o 3 \
 -S 50% \
@@ -120,5 +122,33 @@ $MOSE_BIN/lmplz \
 --arpa /mnt/train.token.clean.50.lm.en \
 --discount_fallback
 \end{lstlisting}
+\subsection{Build Binary Language Model}
+The binary language model is used to save memory and speed up the decoding process. The command is shown in \textit{Listing 5}.
+\begin{lstlisting}[caption={Build Binary Language Model}]
+$MOSES_BIN/build_binary \
+/mnt/train.token.clean.50.lm.en \
+/mnt/train.token.clean.50.blm.en
+
+$MOSES_BIN/build_binary \
+/mnt/train.token.clean.50.lm.zh \
+/mnt/train.token.clean.50.blm.zh
+\end{lstlisting}
+
+\subsection{Test Language Model}
+\begin{lstlisting}[caption=Test Language Model]
+echo "is this an English sentence ?" | \
+$MOSES_BIN/query \
+/mnt/train.token.clean.50.blm.en
+\end{lstlisting}
+\begin{lstlisting}[caption=Query Output]
+is=18 2 -2.6965108      this=45 3 -0.84844      an=281 3 -2.317651      English=0 1 -6.3741117     sentence=6235 1 -4.3026004      ?=54 2 -2.2268012       </s>=2 3 -0.21853548       Total: -18.984652 OOV: 1
+Perplexity including OOVs:      515.3390835409365
+Perplexity excluding OOVs:      126.40278774929547
+OOVs:   1
+Tokens: 7
+Name:query      VmPeak:62996 kB VmRSS:3864 kB   RSSMax:47872 kB user:0.004339   sys:0.008679       CPU:0.013018    real:0.0113772
+\end{lstlisting}
+
+\section{Training}
 
 \end{document}

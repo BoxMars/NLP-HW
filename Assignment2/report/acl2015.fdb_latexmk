@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1698507290 "/workspaces/NLP-HW/Assignment2/report/acl2015.tex" "/workspaces/NLP-HW/Assignment2/report/acl2015.pdf" "acl2015" 1698507290
+["pdflatex"] 1698560194 "/workspaces/NLP-HW/Assignment2/report/acl2015.tex" "/workspaces/NLP-HW/Assignment2/report/acl2015.pdf" "acl2015" 1698560200
   "/etc/texmf/web2c/texmf.cnf" 1698504279 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -88,16 +88,16 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1698504301 165012 f177baa1c39a3ebd62c3096a43521a0d ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1698504308 4879475 9dd1b73f609c8867a58eb00c5effceaa ""
-  "/workspaces/NLP-HW/Assignment2/report/acl2015.aux" 1698507290 1370 245fd46954f3a38d4cbf5283e9f192f0 ""
-  "/workspaces/NLP-HW/Assignment2/report/acl2015.tex" 1698507289 3911 9e9b4884c108656432209f9584f9f530 ""
-  "acl2015.aux" 1698507290 1370 245fd46954f3a38d4cbf5283e9f192f0 "pdflatex"
-  "acl2015.out" 1698507290 151 24c6955d28635195e7c98c57625a0f71 "pdflatex"
+  "/workspaces/NLP-HW/Assignment2/report/acl2015.aux" 1698560194 2225 02a4bf4c2b3b2207953c067366e371af ""
+  "/workspaces/NLP-HW/Assignment2/report/acl2015.tex" 1698560194 5163 a1bfa9a4f750f69acc1e873a060e7d8f ""
+  "acl2015.aux" 1698560194 2225 02a4bf4c2b3b2207953c067366e371af "pdflatex"
+  "acl2015.out" 1698560194 338 7762cfd8f46ca5dde8a3ff0d453c3cf6 "pdflatex"
   "acl2015.sty" 1698504356 13846 c31c36a598ea12cae98631b085c94453 ""
-  "acl2015.tex" 1698507289 3911 9e9b4884c108656432209f9584f9f530 ""
+  "acl2015.tex" 1698560194 5163 a1bfa9a4f750f69acc1e873a060e7d8f ""
   (generated)
+  "acl2015.out"
+  "acl2015.log"
+  "acl2015.pdf"
   "/workspaces/NLP-HW/Assignment2/report/acl2015.log"
   "acl2015.aux"
-  "acl2015.log"
   "/workspaces/NLP-HW/Assignment2/report/acl2015.pdf"
-  "acl2015.pdf"
-  "acl2015.out"

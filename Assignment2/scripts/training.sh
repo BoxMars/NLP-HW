@@ -1,5 +1,6 @@
 printf "Training started\n"
 /home/moses/mosesdecoder/scripts/training/train-model.perl \
+    -cores 4 \
     -root-dir /mnt/model \
     -corpus /mnt/iwslt2014zh-en/train/train.token.clean.50 \
     -f zh \

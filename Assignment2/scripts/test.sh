@@ -1,1 +1,1 @@
-echo "印度 的 第四 大 城市 在 昨天 陷入 瘫痪" | /home/moses/mosesdecoder/bin/moses -f /mnt/model/model/moses.ini
+echo "我 真的 很 开心 , 很 高兴 认识 你" | /home/moses/mosesdecoder/bin/moses -f /mnt/fine-tune/moses.ini
