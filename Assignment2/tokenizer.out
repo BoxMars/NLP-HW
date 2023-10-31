@@ -1,0 +1,51 @@
+Tokenizing Chinese...
+Oct 29, 2023 3:58:16 PM org.ansj.util.MyStaticValue <clinit>
+WARNING: not find library.properties in classpath use it by default !
+Oct 29, 2023 3:58:16 PM org.ansj.library.UserDefineLibrary loadLibrary
+WARNING: init userLibrary  warning :/.. because : file not found or failed to read !
+Oct 29, 2023 3:58:16 PM org.ansj.library.UserDefineLibrary initAmbiguityLibrary
+WARNING: init ambiguity  warning :/library/ambiguity.dic because : file not found or failed to read !
+Oct 29, 2023 3:58:17 PM org.ansj.library.DATDictionary loadDAT
+INFO: init core library ok use time :616
+Oct 29, 2023 3:58:17 PM org.ansj.library.NgramLibrary <clinit>
+INFO: init ngram ok use time :256
+running line: 1000running line: 2000running line: 3000running line: 4000running line: 5000running line: 6000running line: 7000running line: 8000running line: 9000running line: 10000running line: 11000running line: 12000running line: 13000running line: 14000running line: 15000running line: 16000running line: 17000running line: 18000running line: 19000running line: 20000running line: 21000running line: 22000running line: 23000running line: 24000running line: 25000running line: 26000running line: 27000running line: 28000running line: 29000running line: 30000running line: 31000running line: 32000running line: 33000running line: 34000running line: 35000running line: 36000running line: 37000running line: 38000running line: 39000running line: 40000running line: 41000running line: 42000running line: 43000running line: 44000running line: 45000running line: 46000running line: 47000running line: 48000running line: 49000running line: 50000running line: 51000running line: 52000running line: 53000running line: 54000running line: 55000running line: 56000running line: 57000running line: 58000running line: 59000running line: 60000running line: 61000running line: 62000running line: 63000running line: 64000running line: 65000running line: 66000running line: 67000running line: 68000running line: 69000running line: 70000running line: 71000running line: 72000running line: 73000running line: 74000running line: 75000running line: 76000running line: 77000running line: 78000running line: 79000running line: 80000running line: 81000running line: 82000running line: 83000running line: 84000running line: 85000running line: 86000running line: 87000running line: 88000running line: 89000running line: 90000running line: 91000running line: 92000running line: 93000running line: 94000running line: 95000running line: 96000running line: 97000running line: 98000running line: 99000running line: 100000running line: 101000running line: 102000running line: 103000running line: 104000running line: 105000running line: 106000running line: 107000running line: 108000running line: 109000running line: 110000running line: 111000running line: 112000running line: 113000running line: 114000running line: 115000running line: 116000running line: 117000running line: 118000running line: 119000running line: 120000running line: 121000running line: 122000running line: 123000running line: 124000running line: 125000running line: 126000running line: 127000running line: 128000running line: 129000running line: 130000running line: 131000running line: 132000running line: 133000running line: 134000running line: 135000running line: 136000running line: 137000running line: 138000running line: 139000running line: 140000running line: 141000running line: 142000running line: 143000running line: 144000running line: 145000running line: 146000running line: 147000running line: 148000running line: 149000running line: 150000running line: 151000running line: 152000running line: 153000running line: 154000running line: 155000running line: 156000running line: 157000running line: 158000running line: 159000running line: 160000running line: 161000running line: 162000running line: 163000running line: 164000running line: 165000running line: 166000running line: 167000running line: 168000running line: 169000running line: 170000running line: 171000running line: 172000running line: 173000running line: 174000running line: 175000running line: 176000running line: 177000running line: 178000running line: 179000running line: 180000running line: 181000running line: 182000Oct 29, 2023 3:58:21 PM org.ansj.util.MyStaticValue <clinit>
+WARNING: not find library.properties in classpath use it by default !
+Oct 29, 2023 3:58:21 PM org.ansj.library.UserDefineLibrary loadLibrary
+WARNING: init userLibrary  warning :/.. because : file not found or failed to read !
+Oct 29, 2023 3:58:21 PM org.ansj.library.UserDefineLibrary initAmbiguityLibrary
+WARNING: init ambiguity  warning :/library/ambiguity.dic because : file not found or failed to read !
+Oct 29, 2023 3:58:22 PM org.ansj.library.DATDictionary loadDAT
+INFO: init core library ok use time :625
+Oct 29, 2023 3:58:22 PM org.ansj.library.NgramLibrary <clinit>
+INFO: init ngram ok use time :280
+Oct 29, 2023 3:58:23 PM org.ansj.util.MyStaticValue <clinit>
+WARNING: not find library.properties in classpath use it by default !
+Oct 29, 2023 3:58:23 PM org.ansj.library.UserDefineLibrary loadLibrary
+WARNING: init userLibrary  warning :/.. because : file not found or failed to read !
+Oct 29, 2023 3:58:23 PM org.ansj.library.UserDefineLibrary initAmbiguityLibrary
+WARNING: init ambiguity  warning :/library/ambiguity.dic because : file not found or failed to read !
+Oct 29, 2023 3:58:24 PM org.ansj.library.DATDictionary loadDAT
+INFO: init core library ok use time :419
+Oct 29, 2023 3:58:24 PM org.ansj.library.NgramLibrary <clinit>
+INFO: init ngram ok use time :266
+running line: 1000Tokenizing English...
+Tokenizer Version 1.1
+Language: en
+Number of threads: 4
+Tokenizer Version 1.1
+Language: en
+Number of threads: 4
+Tokenizer Version 1.1
+Language: en
+Number of threads: 4
+Cleaning corpus...
+clean-corpus.perl: processing /mnt/iwslt2014zh-en/train/train.token.en & .zh to /mnt/iwslt2014zh-en/train/train.token.clean.50, cutoff 1-50, ratio 9
+..........(100000)........
+Input sentences: 182479  Output sentences:  173918
+clean-corpus.perl: processing /mnt/iwslt2014zh-en/dev/dev.token.en & .zh to /mnt/iwslt2014zh-en/dev/dev.token.clean.50, cutoff 1-50, ratio 9
+
+Input sentences: 903  Output sentences:  815
+clean-corpus.perl: processing /mnt/iwslt2014zh-en/test/test.token.en & .zh to /mnt/iwslt2014zh-en/test/test.token.clean.50, cutoff 1-50, ratio 9
+
+Input sentences: 1092  Output sentences:  1047

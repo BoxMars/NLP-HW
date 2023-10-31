@@ -12,7 +12,7 @@ sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' openjdk:8-jdk 
 
 sudo docker run -it --rm -v '/workspaces/NLP-HW/Assignment2:/mnt' openjdk:8-jdk \
     java -jar /mnt/ansjTokenizer/ansjTokenizer.jar \
-        '/mnt/iwslt2014zh-en/test/IWSLT14.TED.tst2014.zh-en.en' \
+        '/mnt/iwslt2014zh-en/test/IWSLT14.TED.tst2014.zh-en.zh' \
         '/mnt/iwslt2014zh-en/test/test.token.zh' 
 
 printf "Tokenizing English...\n"

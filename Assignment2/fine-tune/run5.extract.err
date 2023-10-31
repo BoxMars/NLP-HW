@@ -5,8 +5,8 @@ Loading reference from /mnt/iwslt2014zh-en/dev/dev.token.clean.50.en
 ........Data::m_score_type BLEU
 Data::Scorer type from Scorer: BLEU
 loading nbest from run5.best100.out.gz
-Loaded N-best lists : [Wall 1.32725 CPU 1.32677] seconds.
+Loaded N-best lists : [Wall 1.35843 CPU 1.35711] seconds.
 Binary write mode is NOT selected
 saving the array into run5.features.dat
 saving the array into run5.scores.dat
-Stopping... : [Wall 4.01858 CPU 3.8696] seconds.
+Stopping... : [Wall 3.67427 CPU 3.65295] seconds.

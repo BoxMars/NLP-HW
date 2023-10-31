@@ -1,0 +1,46 @@
+Defined parameters (per moses.ini or switch):
+	config: /mnt/fine-tune/moses.ini 
+	distortion-limit: 6 
+	feature: UnknownWordPenalty WordPenalty PhrasePenalty PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/mnt/model/model/phrase-table.gz input-factor=0 output-factor=0 LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/mnt/model/model/reordering-table.wbe-msd-bidirectional-fe.gz Distortion KENLM name=LM0 factor=0 path=/mnt/iwslt2014zh-en/train/train.token.clean.50.blm.en order=3 
+	input-factors: 0 
+	mapping: 0 T 0 
+	threads: 8 
+	weight: LexicalReordering0= 0.0685918 0.0771452 0.050912 0.158086 -0.0322601 0.0568668 Distortion0= 0.0611509 LM0= 0.105522 WordPenalty0= -0.102026 PhrasePenalty0= 0.136854 TranslationModel0= 0.0274434 0.0611151 0.0529753 0.00905142 UnknownWordPenalty0= 1 
+line=UnknownWordPenalty
+FeatureFunction: UnknownWordPenalty0 start: 0 end: 0
+line=WordPenalty
+FeatureFunction: WordPenalty0 start: 1 end: 1
+line=PhrasePenalty
+FeatureFunction: PhrasePenalty0 start: 2 end: 2
+line=PhraseDictionaryMemory name=TranslationModel0 num-features=4 path=/mnt/model/model/phrase-table.gz input-factor=0 output-factor=0
+FeatureFunction: TranslationModel0 start: 3 end: 6
+line=LexicalReordering name=LexicalReordering0 num-features=6 type=wbe-msd-bidirectional-fe-allff input-factor=0 output-factor=0 path=/mnt/model/model/reordering-table.wbe-msd-bidirectional-fe.gz
+Initializing Lexical Reordering Feature..
+FeatureFunction: LexicalReordering0 start: 7 end: 12
+line=Distortion
+FeatureFunction: Distortion0 start: 13 end: 13
+line=KENLM name=LM0 factor=0 path=/mnt/iwslt2014zh-en/train/train.token.clean.50.blm.en order=3
+FeatureFunction: LM0 start: 14 end: 14
+Loading UnknownWordPenalty0
+Loading WordPenalty0
+Loading PhrasePenalty0
+Loading LexicalReordering0
+Loading table into memory...done.
+Loading Distortion0
+Loading LM0
+Loading TranslationModel0
+Start loading text phrase table. Moses format : [12.192] seconds
+Reading /mnt/model/model/phrase-table.gz
+----5---10---15---20---25---30---35---40---45---50---55---60---65---70---75---80---85---90---95--100
+****************************************************************************************************
+Created input-output object : [27.434] seconds
+Translating: 我 真的 很 开心 , 很 高兴 认识 你 
+Line 0: Initialize search took 0.000 seconds total
+Line 0: Collecting options took 0.001 seconds at moses/Manager.cpp Line 141
+Line 0: Search took 0.079 seconds
+i &apos;m really happy , nice to meet you . 
+BEST TRANSLATION: i &apos;m really happy , nice to meet you . [111111111]  [total=-4.668] core=(0.000,-10.000,4.000,-10.204,-24.198,-3.303,-22.507,-1.823,0.000,0.000,-1.630,0.000,0.000,0.000,-35.206)  
+Line 0: Decision rule took 0.000 seconds total
+Line 0: Additional reporting took 0.000 seconds total
+Line 0: Translation took 0.080 seconds total
+Name:moses	VmPeak:2835560 kB	VmRSS:2578888 kB	RSSMax:2624932 kB	user:28.522	sys:1.196	CPU:29.718	real:29.727
